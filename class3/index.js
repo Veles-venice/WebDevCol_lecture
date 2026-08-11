@@ -39,3 +39,5 @@ const server = http.createServer((req, res)=>{
 server.listen(port,()=>{
     console.log(`Server is running on port ${port}`);
 });
+
+console.log(`http://localhost:${port}/`); //just so I don't have to remember link
