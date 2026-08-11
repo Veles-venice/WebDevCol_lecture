@@ -18,8 +18,22 @@ const packages = require('./module/pacg.js');
 console.log(packages);
 */
 
+const http = require('http');
+
 require('dotenv').config()
 
 const process = require('process');
 //console.log(process.argv)
-console.log(process.env.PORT);
+//console.log(process.env.PORT);
+const port = process.env.PORT || 3000;
+
+
+const server = http.createServer((req, res)=>{
+    res.writeHead(200, {'Content-Type': 'text/html'}),
+    res.write('<h1>hello world</h1>'),
+    res.write('<p>This is my first server</p>'),
+    res.write('<p>My name is Krish</p>'),
+    res.end()
+});
+
+server.listen(port);
