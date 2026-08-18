@@ -1,4 +1,4 @@
-const package = [
+const packages = [
     {
         id: 1,
         name: "Tour Pakage 1",
@@ -9,3 +9,5 @@ const package = [
         destination: "Goa"
     }
 ]
+
+module.exports = packages;
