@@ -1,4 +1,4 @@
-const tourModel = require("../model/tourModel");
+const tourModel = require("../models/tourModel");
 
 //get all tours
 const getAllTours = (req, res) => {
@@ -6,8 +6,7 @@ const getAllTours = (req, res) => {
     res.json(tours)
 };
 const getTourById = (req, res) => {
-    const id = parseInt(req.params.id);
-    const tour = 
+    const id = parseInt(req.params)
 };
 
 
