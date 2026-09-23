@@ -1,8 +1,7 @@
-const os = require('os');
+const path = require('path')'
 
-console.log('Operating System Information: ');
-console.log(`Platform: ${os.platform()}`);
-console.log(`Architecture: ${os.arch()}`);
-console.log(`CPU Cores: ${os.cpus().length}`);
-console.log(`Total Memory: ${os.totalmem()} bytes`);
-console.log(`Free Memory: ${os.freemem()} bytes`);
+console.log('Path Information: ');
+console.log(`Current Directory: ${__dirname}`);
+const filePath = path.join(__dirname, 'example.txt');
+console.log(`File Path: ${filePath}`);
+
